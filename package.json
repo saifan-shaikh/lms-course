@@ -13,7 +13,7 @@
     "@clerk/nextjs": "^6.12.12",
     "@hello-pangea/dnd": "^18.0.1",
     "@hookform/resolvers": "^5.0.1",
-    "@mux/mux-node": "^12.4.1",
+    "@mux/mux-node": "^12.8.1",
     "@mux/mux-player-react": "^3.5.3",
     "@prisma/client": "^6.8.2",
     "@radix-ui/react-alert-dialog": "^1.1.15",
@@ -34,6 +34,7 @@
     "next": "15.2.4",
     "query-string": "^9.3.1",
     "quill": "^2.0.3",
+    "quill-delta": "^5.1.0",
     "radix-ui": "^1.4.3",
     "react": "^19.0.0",
     "react-confetti": "^6.4.0",
@@ -61,5 +62,8 @@
     "prisma": "^6.8.2",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "overrides": {
+    "node-domexception": "npm:domexception@4.0.0"
   }
 }
