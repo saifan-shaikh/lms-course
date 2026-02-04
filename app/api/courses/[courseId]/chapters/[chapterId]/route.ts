@@ -119,6 +119,7 @@ export const PATCH = async (
       }
     });
 
+    console.log('isPublished', isPublished);
     // TODO: handle Video Upload
     if(values.videoUrl) {
       const existingMuxData = await db.muxData.findFirst({

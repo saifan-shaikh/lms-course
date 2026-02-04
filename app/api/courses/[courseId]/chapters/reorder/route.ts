@@ -25,7 +25,7 @@ export const PUT = async (
 
     const { list } = await req.json();
 
-    for(let item of list) {
+    for(const item of list) {
       await db.chapter.update({
         where: {
           id: item.id,

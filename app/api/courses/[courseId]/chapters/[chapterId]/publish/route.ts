@@ -36,6 +36,8 @@ export const PATCH = async (
       },
     });
 
+    console.log('muxData', muxData);
+
     // if(!chapter || !muxData || !chapter.title || !chapter.description || !chapter.videoUrl) {
 
     if (!chapter || !chapter.title || !chapter.description) {

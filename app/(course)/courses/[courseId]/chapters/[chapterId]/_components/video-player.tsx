@@ -8,8 +8,6 @@ import { Loader2, Lock } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useConfettiStore } from "@/hooks/use-confetti-store";
 import MuxPlayer from "@mux/mux-player-react";
-import { string } from "zod";
-import { on } from "events";
 
 interface VideoPlayerProps {
   chapterId: string;
