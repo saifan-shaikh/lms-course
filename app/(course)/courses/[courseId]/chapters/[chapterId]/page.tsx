@@ -13,15 +13,16 @@ import CourseEnrollButton from "./_components/course-enroll-button";
 import CourseProgressButton from "./_components/course-progress-button";
 
 interface ChapterIdPageProps {
-  params: {
+  params: Promise<{
     courseId: string;
     chapterId: string;
-  };
+  }>;
 }
 
 const ChapterIdPage = async ({
-  params: { courseId, chapterId },
+  params,
 }: ChapterIdPageProps) => {
+  const { courseId, chapterId } = await params;
   const { userId } = await auth();
 
   if (!userId) {
